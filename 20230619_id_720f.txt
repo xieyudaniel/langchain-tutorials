@@ -1,0 +1,3 @@
+SQL: select count(distinct c.会员号) as 会员数量,sum(c.金额) as 消费总金额 from bi_business_member as m join bi_business_consume as c on m.会员号=c.会员号 where c.消费时间 >= '2023-06-01'
+
+Result: {'bg': '这个SQL语句用于获取指定时间段内的会员数量和消费总金额，筛选条件是消费时间大于2023-06-01', 'target_columns': '会员数量, 消费总金额', 'fliter_conditions': "消费时间 >= '2023-06-01'", 'relative_tables': 'bi_business_member, bi_business_consume'}
